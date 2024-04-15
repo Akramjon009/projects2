@@ -22,9 +22,9 @@ import { RouterModule } from '@angular/router';
     NavbarComponent
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
-    RouterModule  
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
