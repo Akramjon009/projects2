@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CrudService } from '../../service/crud.service';
 import { User } from '../../models/user';
 
 @Component({
-  selector: 'app-get-all',
-  templateUrl: './get-all.component.html',
-  styleUrl: './get-all.component.scss',
+  selector: 'app-get-all-with-ngbootstarap',
+  templateUrl: './get-all-with-ngbootstarap.component.html',
+  styleUrl: './get-all-with-ngbootstarap.component.scss',
 })
-export class GetAllComponent implements OnInit {
+export class GetAllWithNgbootstarapComponent {
   users!: User[];
 
   constructor(private crudService: CrudService) {}

@@ -7,7 +7,7 @@ import { User } from '../models/user';
   providedIn: 'root',
 })
 export class CrudService {
-  baseUrl: string = 'https://localhost:44396/api/Users/GetAllUsers';
+  baseUrl: string = 'https://localhost:7226/api/Users';
 
   constructor(private http: HttpClient) {}
 

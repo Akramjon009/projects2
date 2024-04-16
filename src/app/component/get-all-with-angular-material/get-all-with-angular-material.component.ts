@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CrudService } from '../../service/crud.service';
 import { User } from '../../models/user';
 
 @Component({
-  selector: 'app-get-all',
-  templateUrl: './get-all.component.html',
-  styleUrl: './get-all.component.scss',
+  selector: 'app-get-all-with-angular-material',
+  templateUrl: './get-all-with-angular-material.component.html',
+  styleUrl: './get-all-with-angular-material.component.scss',
 })
-export class GetAllComponent implements OnInit {
+export class GetAllWithAngularMaterialComponent {
   users!: User[];
 
   constructor(private crudService: CrudService) {}

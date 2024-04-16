@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GetAllComponent } from './component/get-all/get-all.component';
-import { GetByIdComponent } from './component/get-by-id/get-by-id.component';
-import { CreatComponent } from './component/creat/creat.component';
-import { UpdateComponent } from './component/update/update.component';
-import { DeleteComponent } from './component/delete/delete.component';
+import { GetAllWithAngularMaterialComponent } from './component/get-all-with-angular-material/get-all-with-angular-material.component';
+import { GetAllWithNgbootstarapComponent } from './component/get-all-with-ngbootstarap/get-all-with-ngbootstarap.component';
 
 const routes: Routes = [
-  { path: 'home', redirectTo: 'getall', pathMatch: 'full' },
-  { path: '', redirectTo: 'getall', pathMatch: 'full' },
-  { path: 'getall', title: 'GetAll', component: GetAllComponent },
-  { path: 'getbyid', component: GetByIdComponent },
-  { path: 'create', component: CreatComponent },
-  { path: 'update', component: UpdateComponent },
-  { path: 'delete', component: DeleteComponent },
+  { path: 'Bootstrap', component: GetAllComponent },
+  { path: 'ng', component: GetAllWithNgbootstarapComponent },
+  { path: 'Angular', component: GetAllWithAngularMaterialComponent },
 ];
 
 @NgModule({

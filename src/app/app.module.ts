@@ -1,32 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreatComponent } from './component/creat/creat.component';
-import { UpdateComponent } from './component/update/update.component';
-import { DeleteComponent } from './component/delete/delete.component';
 import { GetAllComponent } from './component/get-all/get-all.component';
-import { GetByIdComponent } from './component/get-by-id/get-by-id.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GetAllWithNgbootstarapComponent } from './component/get-all-with-ngbootstarap/get-all-with-ngbootstarap.component';
+import { GetAllWithAngularMaterialComponent } from './component/get-all-with-angular-material/get-all-with-angular-material.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreatComponent,
-    UpdateComponent,
-    DeleteComponent,
+    GetAllWithAngularMaterialComponent,
     GetAllComponent,
-    GetByIdComponent,
-    NavbarComponent
+    NavbarComponent,
+    GetAllWithNgbootstarapComponent,
+    GetAllWithAngularMaterialComponent,
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    NgbModule,
+    RouterLink,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
